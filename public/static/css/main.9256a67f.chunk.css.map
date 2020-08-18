@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AACA,sDACE,kCACF,CAEA,oCACE,UACF,CAEA,SACE,aACF","file":"main.9256a67f.chunk.css","sourcesContent":["\n#root > nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {\n  background-color: #02A7ED !important;\n}\n\n#root > nav.navbar.navbar-expand-lg a {\n  color: white;\n}\n\nfooter a {\n  color: #0A74A1;\n}"]}

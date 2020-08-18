@@ -1,0 +1,41 @@
+
+
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMzgwNWI4MjkwOGVjNjU4OGNjODUzZiIsImVtYWlsIjoianRvcnJlczk5MEBnbWFpbC5jb20iLCJpYXQiOjE1OTc1MDcwMDM2ODQsImV4cGlyZSI6MTU5NzUwNzA2MzY4NCwiZXhwIjoxNTk3NTA3MDA1MTI0fQ.F0vcOzB5hCxWyNr399QbTLjqrv7mXtrhQehwvdc-EYY
+
+###
+POST http://localhost:3000/news
+Content-Type: application/json
+Accept: application/json
+Authorization: bearer {{token}}
+
+{
+  "title": "hello",
+  "content": "jamaica"
+}
+
+###
+POST http://localhost:3000/news
+Authorization: bearer {{token}}
+Accept: application/json
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="title"
+
+hello
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="content"
+
+jamaica
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="1.png"
+Content-Type: image/png
+
+< /home/julio/Descargas/redis.gif
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+GET http://localhost:3000/news?userId=5f3805b82908ec6588cc853f&title=hello&content=jamaica
+Accept: application/json
+Authorization: bearer {{token}}
+

@@ -1,0 +1,15 @@
+
+###
+GET http://localhost:3000
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "julio",
+  "lastName": "torres",
+  "email": "jtorres990@gmail.com",
+  "password": "Password-1"
+}

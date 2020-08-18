@@ -1,0 +1,12 @@
+
+#root > nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+  background-color: #02A7ED !important;
+}
+
+#root > nav.navbar.navbar-expand-lg a {
+  color: white;
+}
+
+footer a {
+  color: #0A74A1;
+}
